@@ -4,21 +4,17 @@
 
 /**
  *
- *  * _isalpha - check the code for ALX School students.
+ *  *_islower - checks for a lowercase character
  *
- *   *
+ *   *@c: letter being tested
  *
- *    * @c: is c an integer argument
+ *    * Return: Always 0
  *
- *     *
- *
- *      * Return: Always 0.
- *
- *       */
+ *     */
 
 
 
-int _isalpha(int c)
+int _islower(int c)
 
 {
 
@@ -26,20 +22,10 @@ int _isalpha(int c)
 
 		if (c >= 97 && c <= 122)
 
-				{
+					return (1);
 
-							return (1);
+			else
 
-								}
-
-			else if (c >= 65 && c <= 90)
-
-					{
-
-								return (1);
-
-									}
-
-				return (0);
+						return (0);
 
 }
